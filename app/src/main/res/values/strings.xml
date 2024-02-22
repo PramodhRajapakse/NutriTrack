@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NutriTrack</string>
+    <string name="nutritrack_logo">NutriTrack Logo</string>
+    <string name="create_account">Create an Account</string>
+    <string name="login">Login</string>
+    <string name="txtTermsAndConditions"><![CDATA["By continuing you agree to NutriTrack Terms & Conditions and Privacy Policy."]]></string>
+</resources>
