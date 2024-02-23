@@ -3,5 +3,13 @@
     <string name="nutritrack_logo">NutriTrack Logo</string>
     <string name="create_account">Create an Account</string>
     <string name="login">Login</string>
+    <string name="personalize">Personalize</string>
     <string name="txtTermsAndConditions"><![CDATA["By continuing you agree to NutriTrack Terms & Conditions and Privacy Policy."]]></string>
+    <string name="nutritrack_user_goal_question">What is your goal for using NutriTrack?</string>
+    <string name="lose_fat">Lose some fat</string>
+    <string name="maintain_body">Maintain my body</string>
+    <string name="gain_muscle">Gain more weight</string>
+    <string name="next">Next</string>
+
+
 </resources>
