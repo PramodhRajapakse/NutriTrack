@@ -43,7 +43,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/topBar"
-        android:layout_marginTop="16dp"
+        android:layout_margin="16dp"
         android:orientation="horizontal">
 
         <ImageView
@@ -52,13 +52,18 @@
             android:layout_gravity="center"
             app:srcCompat="@drawable/outline_email_24" />
 
-        <EditText
-            android:id="@+id/emailEditText"
-            android:layout_width="0dp"
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:hint="Email"
-            android:inputType="textEmailAddress"/>
+            android:id="@+id/layout_email"
+            app:boxBackgroundMode="filled">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email" />
+
+        </com.google.android.material.textfield.TextInputLayout>
     </LinearLayout>
 
     <!-- Password Input -->
@@ -67,7 +72,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/emailInputLayout"
-        android:layout_marginTop="16dp"
+        android:layout_margin="16dp"
         android:orientation="horizontal">
 
         <ImageView
@@ -76,15 +81,22 @@
             android:layout_gravity="center"
             app:srcCompat="@drawable/outline_lock_24" />
 
-        <EditText
-            android:id="@+id/passwordEditText"
-            android:layout_width="0dp"
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:hint="Password"
-            android:inputType="textPassword"/>
-    </LinearLayout>
+            android:id="@+id/layout_password"
+            app:passwordToggleTint="@color/text_black"
+            app:boxBackgroundMode="filled"
+            app:passwordToggleEnabled="true">
 
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
 
     <!-- Create Account Button -->
     <androidx.appcompat.widget.AppCompatButton
