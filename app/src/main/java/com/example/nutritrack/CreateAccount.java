@@ -25,5 +25,13 @@ public class CreateAccount extends AppCompatActivity {
                 finish();
             }
         });
+
+        binding.createAccountButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(CreateAccount.this, Onboarding.class));
+                finish();
+            }
+        });
     }
 }

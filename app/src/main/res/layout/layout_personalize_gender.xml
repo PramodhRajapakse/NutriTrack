@@ -5,50 +5,28 @@
     android:layout_height="match_parent"
     android:padding="16dp">
 
-    <!-- Top Bar -->
-    <LinearLayout
-        android:id="@+id/topBar"
-        android:layout_width="match_parent"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewImg"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        app:cardCornerRadius="20dp"
+        android:elevation="10dp">
 
         <ImageView
-            android:id="@+id/backButton"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginEnd="16dp"
-            android:layout_weight="0.1"
-            android:src="@drawable/baseline_arrow_back_24" />
+            android:id="@+id/imgViewGenderSelect"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/gender_running" />
 
-        <TextView
-            android:id="@+id/title"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="0.9"
-            android:fontFamily="@font/be_vietnam"
-            android:paddingRight="50dp"
-            android:text="@string/personalize"
-            android:textAlignment="center"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
 
-
-    </LinearLayout>
-
-    <ImageView
-        android:id="@+id/imgViewGoalSelect"
-        android:layout_width="395dp"
-        android:layout_height="242dp"
-        android:layout_weight="1"
-        app:srcCompat="@drawable/nutritrack_logo" />
 
     <TextView
         android:id="@+id/txtViewGoalQuestion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/imgViewGoalSelect"
+        android:layout_below="@id/cardViewImg"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="16dp"
@@ -77,8 +55,7 @@
             android:layout_width="wrap_content"
             android:layout_height="100dp"
             android:layout_alignParentEnd="true"
-            android:padding="10dp"
-            android:layout_marginEnd="20dp"
+            android:layout_margin="10dp"
             android:background="@drawable/secondary_rounded_button"
             android:fontFamily="@font/be_vietnam_bold"
             android:text="@string/male"
@@ -89,7 +66,7 @@
             android:id="@+id/btnMaintain"
             android:layout_width="wrap_content"
             android:layout_height="100dp"
-            android:layout_marginStart="20dp"
+            android:layout_margin="10dp"
             android:background="@drawable/secondary_rounded_button"
             android:fontFamily="@font/be_vietnam_bold"
             android:text="@string/female"
@@ -98,16 +75,44 @@
 
     </LinearLayout>
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnGoalNext"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
         android:layout_alignParentBottom="true"
-        android:textColor="@color/white"
-        android:fontFamily="@font/be_vietnam_bold"
-        android:textAllCaps="false"
-        android:background="@drawable/rounded_button"
-        android:text="@string/next" />
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnGoalBack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/be_vietnam_bold"
+            android:text="@string/back"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnGoalNext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/be_vietnam_bold"
+            android:text="@string/next"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
 
 </RelativeLayout>

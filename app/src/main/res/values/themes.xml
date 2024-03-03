@@ -4,7 +4,18 @@
         <!-- Customize your light theme here. -->
          <item name="colorPrimary">@color/primary</item>
         <item name="android:fontFamily">@font/be_vietnam</item>
+    </style>
 
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/primary</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/DialogButtonStyled</item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/DialogButtonStyled</item>
+        <item name="android:buttonBarNeutralButtonStyle">@style/DialogButtonStyled</item>
+    </style>
+
+    <style name="DialogButtonStyled" parent="Theme.MaterialComponents.Light">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@color/transparent</item>
     </style>
 
     <style name="Theme.NutriTrack" parent="Base.Theme.NutriTrack" />

@@ -1,0 +1,22 @@
+<!-- res/drawable/circular_progress_bar.xml -->
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromDegrees="135"
+    android:toDegrees="135">
+        <shape
+            android:shape="ring"
+            android:useLevel="true"
+            android:innerRadiusRatio="3"
+            android:thicknessRatio="10"
+            android:startAngle="45"
+            android:sweepAngle="180">
+
+            <size
+                android:width="120dp"
+                android:height="120dp" />
+
+            <gradient
+                android:startColor="#00FF00"
+            android:endColor="#00FF00"
+            android:type="sweep" />
+        </shape>
+</rotate>
